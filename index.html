@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_e8e1766acc2b41bea6888ce59db2932d {
+        position: relative;
+        width: 100.0%;
+        height: 90.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    <h2 style="text-align:center;">COVID-19 Total Confirmed Cases in China</h2> <h3 style="text-align:center;">Created by PRANAV M R</h3> <h4 style="text-align:center;"> Powered by <a href="https://www.whitehatjr.com/"> WhiteHat Jr </a> </h4>
+    <div class="folium-map" id="map_e8e1766acc2b41bea6888ce59db2932d" ></div>
+</br>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_e8e1766acc2b41bea6888ce59db2932d = L.map(
+        'map_e8e1766acc2b41bea6888ce59db2932d', {
+        center: [30.9756, 112.2707],
+        zoom: 4.5,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_ec912db2e00c421ba00954631e41730b = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+    
+
+            var circle_55d964d19ad64f05845edf9de7db3020 = L.circle(
+                [31.8257, 117.2264],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1982,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_d529d5d2fc004076905f656f1a07ef8c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e923ccd7f1684ea682a78e0503fdb390 = $(`<div id="html_e923ccd7f1684ea682a78e0503fdb390" style="width: 100.0%; height: 100.0%;">Anhui 991</div>`)[0];
+                popup_d529d5d2fc004076905f656f1a07ef8c.setContent(html_e923ccd7f1684ea682a78e0503fdb390);
+            
+
+            circle_55d964d19ad64f05845edf9de7db3020.bindPopup(popup_d529d5d2fc004076905f656f1a07ef8c)
+            ;
+
+            
+        
+    
+
+            var circle_04794c55930d493abf334773f177db41 = L.circle(
+                [40.1824, 116.4142],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1858,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_30d09e03b683465eae516068b1d8dcfe = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5d89739aa8f54d34931690dc70ebfb94 = $(`<div id="html_5d89739aa8f54d34931690dc70ebfb94" style="width: 100.0%; height: 100.0%;">Beijing 929</div>`)[0];
+                popup_30d09e03b683465eae516068b1d8dcfe.setContent(html_5d89739aa8f54d34931690dc70ebfb94);
+            
+
+            circle_04794c55930d493abf334773f177db41.bindPopup(popup_30d09e03b683465eae516068b1d8dcfe)
+            ;
+
+            
+        
+    
+
+            var circle_7818e382c5104250ae3ae7b331e67160 = L.circle(
+                [30.0572, 107.874],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1166,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_a2c1ca15ef954e2b9b88401f4e998c7b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_28dde541e7794f1486a489028cfbdc98 = $(`<div id="html_28dde541e7794f1486a489028cfbdc98" style="width: 100.0%; height: 100.0%;">Chongqing 583</div>`)[0];
+                popup_a2c1ca15ef954e2b9b88401f4e998c7b.setContent(html_28dde541e7794f1486a489028cfbdc98);
+            
+
+            circle_7818e382c5104250ae3ae7b331e67160.bindPopup(popup_a2c1ca15ef954e2b9b88401f4e998c7b)
+            ;
+
+            
+        
+    
+
+            var circle_e142a8072cc84b788adb7efb294f045d = L.circle(
+                [26.0789, 117.9874],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 726,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_ab6ab6e59ec148f39d5d44dd3f6c007f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8c4d813b6dd74792a8f5376da88af83f = $(`<div id="html_8c4d813b6dd74792a8f5376da88af83f" style="width: 100.0%; height: 100.0%;">Fujian 363</div>`)[0];
+                popup_ab6ab6e59ec148f39d5d44dd3f6c007f.setContent(html_8c4d813b6dd74792a8f5376da88af83f);
+            
+
+            circle_e142a8072cc84b788adb7efb294f045d.bindPopup(popup_ab6ab6e59ec148f39d5d44dd3f6c007f)
+            ;
+
+            
+        
+    
+
+            var circle_bb76b86d26a34cf59249ed53b22d35dd = L.circle(
+                [35.7518, 104.2861],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 334,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_4893aa3dc26a47088a4daea67d93cf0e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cf8b77b464874f6384a03b165266bbb9 = $(`<div id="html_cf8b77b464874f6384a03b165266bbb9" style="width: 100.0%; height: 100.0%;">Gansu 167</div>`)[0];
+                popup_4893aa3dc26a47088a4daea67d93cf0e.setContent(html_cf8b77b464874f6384a03b165266bbb9);
+            
+
+            circle_bb76b86d26a34cf59249ed53b22d35dd.bindPopup(popup_4893aa3dc26a47088a4daea67d93cf0e)
+            ;
+
+            
+        
+    
+
+            var circle_e5f58521e6ec4bc4a0288e52148cca3c = L.circle(
+                [23.3417, 113.4244],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3300,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_f90d56f3a5964ee9bb6cd02f8149fe3e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a15e5eb5c09c4109b81258e5ae092972 = $(`<div id="html_a15e5eb5c09c4109b81258e5ae092972" style="width: 100.0%; height: 100.0%;">Guangdong 1650</div>`)[0];
+                popup_f90d56f3a5964ee9bb6cd02f8149fe3e.setContent(html_a15e5eb5c09c4109b81258e5ae092972);
+            
+
+            circle_e5f58521e6ec4bc4a0288e52148cca3c.bindPopup(popup_f90d56f3a5964ee9bb6cd02f8149fe3e)
+            ;
+
+            
+        
+    
+
+            var circle_5d482ddadd574fd6bc34f19099fedd84 = L.circle(
+                [23.8298, 108.7881],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 508,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_ea264bb1fb8c4e82bad7f505e5761f6a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ee1f43cdeff348b59ba696ae2395ff2a = $(`<div id="html_ee1f43cdeff348b59ba696ae2395ff2a" style="width: 100.0%; height: 100.0%;">Guangxi 254</div>`)[0];
+                popup_ea264bb1fb8c4e82bad7f505e5761f6a.setContent(html_ee1f43cdeff348b59ba696ae2395ff2a);
+            
+
+            circle_5d482ddadd574fd6bc34f19099fedd84.bindPopup(popup_ea264bb1fb8c4e82bad7f505e5761f6a)
+            ;
+
+            
+        
+    
+
+            var circle_5f24ea4b8c614f92a10ce8a418521322 = L.circle(
+                [26.8154, 106.8748],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 294,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_e816fbc3ae834572a5288a5552a5faa9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ee9c543f2b814fa7a5833b1fb7addb56 = $(`<div id="html_ee9c543f2b814fa7a5833b1fb7addb56" style="width: 100.0%; height: 100.0%;">Guizhou 147</div>`)[0];
+                popup_e816fbc3ae834572a5288a5552a5faa9.setContent(html_ee9c543f2b814fa7a5833b1fb7addb56);
+            
+
+            circle_5f24ea4b8c614f92a10ce8a418521322.bindPopup(popup_e816fbc3ae834572a5288a5552a5faa9)
+            ;
+
+            
+        
+    
+
+            var circle_d1de306f01e642aa9e84c736fd4098dc = L.circle(
+                [19.1959, 109.7453],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 342,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_27432f2e2724410bad6bec6183b8767c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5d9bf1b6b8b14584b1d7073836f96161 = $(`<div id="html_5d9bf1b6b8b14584b1d7073836f96161" style="width: 100.0%; height: 100.0%;">Hainan 171</div>`)[0];
+                popup_27432f2e2724410bad6bec6183b8767c.setContent(html_5d9bf1b6b8b14584b1d7073836f96161);
+            
+
+            circle_d1de306f01e642aa9e84c736fd4098dc.bindPopup(popup_27432f2e2724410bad6bec6183b8767c)
+            ;
+
+            
+        
+    
+
+            var circle_ee915b2e30a14dd897b3e9d9b342c1f0 = L.circle(
+                [39.549, 116.1306],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 698,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_d3f0bd060a65472dab9952622534e89b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e8d39faea7454df996747401c2f85ddd = $(`<div id="html_e8d39faea7454df996747401c2f85ddd" style="width: 100.0%; height: 100.0%;">Hebei 349</div>`)[0];
+                popup_d3f0bd060a65472dab9952622534e89b.setContent(html_e8d39faea7454df996747401c2f85ddd);
+            
+
+            circle_ee915b2e30a14dd897b3e9d9b342c1f0.bindPopup(popup_d3f0bd060a65472dab9952622534e89b)
+            ;
+
+            
+        
+    
+
+            var circle_734c2a82a4ce41cd962f8cff0119856b = L.circle(
+                [47.861999999999995, 127.7615],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1894,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_a59c0e095f0a4a34b8eaff6d8a18ce8d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ee6938fb0a524d6ea839628c79fe0f6c = $(`<div id="html_ee6938fb0a524d6ea839628c79fe0f6c" style="width: 100.0%; height: 100.0%;">Heilongjiang 947</div>`)[0];
+                popup_a59c0e095f0a4a34b8eaff6d8a18ce8d.setContent(html_ee6938fb0a524d6ea839628c79fe0f6c);
+            
+
+            circle_734c2a82a4ce41cd962f8cff0119856b.bindPopup(popup_a59c0e095f0a4a34b8eaff6d8a18ce8d)
+            ;
+
+            
+        
+    
+
+            var circle_22742eee8fe14a80b8543bcdc3e6032f = L.circle(
+                [37.8957, 114.9042],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2552,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_77be53500b2b4ace995a692f7a846beb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5d62f2ecc92c46a0b82b5103a8e978db = $(`<div id="html_5d62f2ecc92c46a0b82b5103a8e978db" style="width: 100.0%; height: 100.0%;">Henan 1276</div>`)[0];
+                popup_77be53500b2b4ace995a692f7a846beb.setContent(html_5d62f2ecc92c46a0b82b5103a8e978db);
+            
+
+            circle_22742eee8fe14a80b8543bcdc3e6032f.bindPopup(popup_77be53500b2b4ace995a692f7a846beb)
+            ;
+
+            
+        
+    
+
+            var circle_ea700df7a5d4487eb8b8be0702041fe0 = L.circle(
+                [22.3, 114.2],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3176,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_1c898169524745d29c1f75797f840b1c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_575f7efddb4e49c782a98550c9d29191 = $(`<div id="html_575f7efddb4e49c782a98550c9d29191" style="width: 100.0%; height: 100.0%;">Hong Kong 1588</div>`)[0];
+                popup_1c898169524745d29c1f75797f840b1c.setContent(html_575f7efddb4e49c782a98550c9d29191);
+            
+
+            circle_ea700df7a5d4487eb8b8be0702041fe0.bindPopup(popup_1c898169524745d29c1f75797f840b1c)
+            ;
+
+            
+        
+    
+
+            var circle_bd6ae086efcd4f9e8240a20fa7f65d6f = L.circle(
+                [30.9756, 112.2707],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 136270,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_23250b836ba643eeb1f0e37374590485 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b99cc7f55dcf47be8aab7bfc2b9065f8 = $(`<div id="html_b99cc7f55dcf47be8aab7bfc2b9065f8" style="width: 100.0%; height: 100.0%;">Hubei 68135</div>`)[0];
+                popup_23250b836ba643eeb1f0e37374590485.setContent(html_b99cc7f55dcf47be8aab7bfc2b9065f8);
+            
+
+            circle_bd6ae086efcd4f9e8240a20fa7f65d6f.bindPopup(popup_23250b836ba643eeb1f0e37374590485)
+            ;
+
+            
+        
+    
+
+            var circle_8b172eb532a141cfb03b0ce43a80a868 = L.circle(
+                [27.6104, 111.7088],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2038,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_5b95b5af79c04283835cad074691ccae = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8f70f674f2f8407580ec2a9cb29af7ba = $(`<div id="html_8f70f674f2f8407580ec2a9cb29af7ba" style="width: 100.0%; height: 100.0%;">Hunan 1019</div>`)[0];
+                popup_5b95b5af79c04283835cad074691ccae.setContent(html_8f70f674f2f8407580ec2a9cb29af7ba);
+            
+
+            circle_8b172eb532a141cfb03b0ce43a80a868.bindPopup(popup_5b95b5af79c04283835cad074691ccae)
+            ;
+
+            
+        
+    
+
+            var circle_43848bb0b8674dd99b914f12c67e1f97 = L.circle(
+                [44.0935, 113.9448],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 498,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_e3564691182b4ff6b6340959322192ee = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7da4df9beb504fc7a6ecb01f044b499e = $(`<div id="html_7da4df9beb504fc7a6ecb01f044b499e" style="width: 100.0%; height: 100.0%;">Inner Mongolia 249</div>`)[0];
+                popup_e3564691182b4ff6b6340959322192ee.setContent(html_7da4df9beb504fc7a6ecb01f044b499e);
+            
+
+            circle_43848bb0b8674dd99b914f12c67e1f97.bindPopup(popup_e3564691182b4ff6b6340959322192ee)
+            ;
+
+            
+        
+    
+
+            var circle_84b85b5618bc4bb79c6cbe17b859a4ea = L.circle(
+                [32.9711, 119.455],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1308,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_ee8249bc8e2f460599dad22b906f3702 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3c346a65689746fc95b88c1b0e409d57 = $(`<div id="html_3c346a65689746fc95b88c1b0e409d57" style="width: 100.0%; height: 100.0%;">Jiangsu 654</div>`)[0];
+                popup_ee8249bc8e2f460599dad22b906f3702.setContent(html_3c346a65689746fc95b88c1b0e409d57);
+            
+
+            circle_84b85b5618bc4bb79c6cbe17b859a4ea.bindPopup(popup_ee8249bc8e2f460599dad22b906f3702)
+            ;
+
+            
+        
+    
+
+            var circle_1706e48f5fbf4fa9a4ca4247e5e1d585 = L.circle(
+                [27.614, 115.7221],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1864,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_b0f7da08e35844faa42d8deb7149f8e7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ce39d56d35b044bfb63ef9174f577d31 = $(`<div id="html_ce39d56d35b044bfb63ef9174f577d31" style="width: 100.0%; height: 100.0%;">Jiangxi 932</div>`)[0];
+                popup_b0f7da08e35844faa42d8deb7149f8e7.setContent(html_ce39d56d35b044bfb63ef9174f577d31);
+            
+
+            circle_1706e48f5fbf4fa9a4ca4247e5e1d585.bindPopup(popup_b0f7da08e35844faa42d8deb7149f8e7)
+            ;
+
+            
+        
+    
+
+            var circle_4e1ec04322db42e9ac92fab2be2b3a38 = L.circle(
+                [43.6661, 126.1923],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 310,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_2f783d7a545d4b24a91c1d5ea2eebfa9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_acc1dd1fe53f49e190d2d8cb5b4fe7eb = $(`<div id="html_acc1dd1fe53f49e190d2d8cb5b4fe7eb" style="width: 100.0%; height: 100.0%;">Jilin 155</div>`)[0];
+                popup_2f783d7a545d4b24a91c1d5ea2eebfa9.setContent(html_acc1dd1fe53f49e190d2d8cb5b4fe7eb);
+            
+
+            circle_4e1ec04322db42e9ac92fab2be2b3a38.bindPopup(popup_2f783d7a545d4b24a91c1d5ea2eebfa9)
+            ;
+
+            
+        
+    
+
+            var circle_ea04d74846f040c5a15684979f34dde3 = L.circle(
+                [41.2956, 122.6085],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 328,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_6117dbce031c4eb59da811d600399943 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_22f9dd3ce4c74129b205fe631cb5dcad = $(`<div id="html_22f9dd3ce4c74129b205fe631cb5dcad" style="width: 100.0%; height: 100.0%;">Liaoning 164</div>`)[0];
+                popup_6117dbce031c4eb59da811d600399943.setContent(html_22f9dd3ce4c74129b205fe631cb5dcad);
+            
+
+            circle_ea04d74846f040c5a15684979f34dde3.bindPopup(popup_6117dbce031c4eb59da811d600399943)
+            ;
+
+            
+        
+    
+
+            var circle_f4999b0bf5c04e708f8155951468cafc = L.circle(
+                [22.1667, 113.55],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 92,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_7c08213505b2420aa3057ee9e051ad09 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7ba7b1776854435893f7332a42a026ca = $(`<div id="html_7ba7b1776854435893f7332a42a026ca" style="width: 100.0%; height: 100.0%;">Macau 46</div>`)[0];
+                popup_7c08213505b2420aa3057ee9e051ad09.setContent(html_7ba7b1776854435893f7332a42a026ca);
+            
+
+            circle_f4999b0bf5c04e708f8155951468cafc.bindPopup(popup_7c08213505b2420aa3057ee9e051ad09)
+            ;
+
+            
+        
+    
+
+            var circle_2f1866ce8509413a945d47fceceecb97 = L.circle(
+                [37.2692, 106.1655],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 150,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_077f8d6c503c432f8be1d8e9ec00f35e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a3e47411a6054fdaac7f7615450c7744 = $(`<div id="html_a3e47411a6054fdaac7f7615450c7744" style="width: 100.0%; height: 100.0%;">Ningxia 75</div>`)[0];
+                popup_077f8d6c503c432f8be1d8e9ec00f35e.setContent(html_a3e47411a6054fdaac7f7615450c7744);
+            
+
+            circle_2f1866ce8509413a945d47fceceecb97.bindPopup(popup_077f8d6c503c432f8be1d8e9ec00f35e)
+            ;
+
+            
+        
+    
+
+            var circle_df2cc71eebac48f48272886438aadfb7 = L.circle(
+                [35.7452, 95.9956],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 36,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_ece9f75d78e84d00ac905ba8d17b1639 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4d57edf6ae224eb2be27292a83f83b88 = $(`<div id="html_4d57edf6ae224eb2be27292a83f83b88" style="width: 100.0%; height: 100.0%;">Qinghai 18</div>`)[0];
+                popup_ece9f75d78e84d00ac905ba8d17b1639.setContent(html_4d57edf6ae224eb2be27292a83f83b88);
+            
+
+            circle_df2cc71eebac48f48272886438aadfb7.bindPopup(popup_ece9f75d78e84d00ac905ba8d17b1639)
+            ;
+
+            
+        
+    
+
+            var circle_c1ea6d77c218479b96df1a517342e03d = L.circle(
+                [35.1917, 108.8701],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 642,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_f90c37a52abd4997b339571ccadcaa2c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d012846797f54d3a8469ee4d4aea506c = $(`<div id="html_d012846797f54d3a8469ee4d4aea506c" style="width: 100.0%; height: 100.0%;">Shaanxi 321</div>`)[0];
+                popup_f90c37a52abd4997b339571ccadcaa2c.setContent(html_d012846797f54d3a8469ee4d4aea506c);
+            
+
+            circle_c1ea6d77c218479b96df1a517342e03d.bindPopup(popup_f90c37a52abd4997b339571ccadcaa2c)
+            ;
+
+            
+        
+    
+
+            var circle_12f32c3bde024850a491e8baa7efffc2 = L.circle(
+                [36.3427, 118.1498],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1586,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_dca3bc90ab9d4b2585600bcdff996030 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3f083df125484d1d9479b088f930dc81 = $(`<div id="html_3f083df125484d1d9479b088f930dc81" style="width: 100.0%; height: 100.0%;">Shandong 793</div>`)[0];
+                popup_dca3bc90ab9d4b2585600bcdff996030.setContent(html_3f083df125484d1d9479b088f930dc81);
+            
+
+            circle_12f32c3bde024850a491e8baa7efffc2.bindPopup(popup_dca3bc90ab9d4b2585600bcdff996030)
+            ;
+
+            
+        
+    
+
+            var circle_594c005aa07942d98ee61e4f3110a7cf = L.circle(
+                [31.201999999999998, 121.4491],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1464,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_c79ab77c75f949db8d256028d5beb352 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1e1359b30e1141718ae19fe30123afa7 = $(`<div id="html_1e1359b30e1141718ae19fe30123afa7" style="width: 100.0%; height: 100.0%;">Shanghai 732</div>`)[0];
+                popup_c79ab77c75f949db8d256028d5beb352.setContent(html_1e1359b30e1141718ae19fe30123afa7);
+            
+
+            circle_594c005aa07942d98ee61e4f3110a7cf.bindPopup(popup_c79ab77c75f949db8d256028d5beb352)
+            ;
+
+            
+        
+    
+
+            var circle_24b255f7e8074caeb801c5556691b2bc = L.circle(
+                [37.5777, 112.2922],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 402,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_8a3483cdfca54f4ca03e907d9883aa22 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ad0824ae3e9f48c8a0201931c2e3fe11 = $(`<div id="html_ad0824ae3e9f48c8a0201931c2e3fe11" style="width: 100.0%; height: 100.0%;">Shanxi 201</div>`)[0];
+                popup_8a3483cdfca54f4ca03e907d9883aa22.setContent(html_ad0824ae3e9f48c8a0201931c2e3fe11);
+            
+
+            circle_24b255f7e8074caeb801c5556691b2bc.bindPopup(popup_8a3483cdfca54f4ca03e907d9883aa22)
+            ;
+
+            
+        
+    
+
+            var circle_53bd1fc07add449a86b59fb5b4966902 = L.circle(
+                [30.6171, 102.7103],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1198,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_c726494360a743058d8813d22f8071db = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_91a301a442274247bf340372c4c3a332 = $(`<div id="html_91a301a442274247bf340372c4c3a332" style="width: 100.0%; height: 100.0%;">Sichuan 599</div>`)[0];
+                popup_c726494360a743058d8813d22f8071db.setContent(html_91a301a442274247bf340372c4c3a332);
+            
+
+            circle_53bd1fc07add449a86b59fb5b4966902.bindPopup(popup_c726494360a743058d8813d22f8071db)
+            ;
+
+            
+        
+    
+
+            var circle_e2f1513ec17347efafd4c19065ec86e9 = L.circle(
+                [39.3054, 117.323],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 406,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_66da027467584347b1a8e5ad134e7825 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c25a23ba482f40e982b7ac7d0936688b = $(`<div id="html_c25a23ba482f40e982b7ac7d0936688b" style="width: 100.0%; height: 100.0%;">Tianjin 203</div>`)[0];
+                popup_66da027467584347b1a8e5ad134e7825.setContent(html_c25a23ba482f40e982b7ac7d0936688b);
+            
+
+            circle_e2f1513ec17347efafd4c19065ec86e9.bindPopup(popup_66da027467584347b1a8e5ad134e7825)
+            ;
+
+            
+        
+    
+
+            var circle_4ef18c5111384c38ba1e068dc8dce63c = L.circle(
+                [31.6927, 88.0924],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_5d5b7a4c623e40bc8a1ff92f11d39c40 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_db6b3d3c4b5d49bb8ebc084d50d6548e = $(`<div id="html_db6b3d3c4b5d49bb8ebc084d50d6548e" style="width: 100.0%; height: 100.0%;">Tibet 1</div>`)[0];
+                popup_5d5b7a4c623e40bc8a1ff92f11d39c40.setContent(html_db6b3d3c4b5d49bb8ebc084d50d6548e);
+            
+
+            circle_4ef18c5111384c38ba1e068dc8dce63c.bindPopup(popup_5d5b7a4c623e40bc8a1ff92f11d39c40)
+            ;
+
+            
+        
+    
+
+            var circle_c3d426bd0c9e431f9387c156d111dbd2 = L.circle(
+                [41.1129, 85.2401],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 152,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_f79dbbafedc84cb1b730e0810ec85d24 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_59a85245852b47ec90a4f02f21fcadc5 = $(`<div id="html_59a85245852b47ec90a4f02f21fcadc5" style="width: 100.0%; height: 100.0%;">Xinjiang 76</div>`)[0];
+                popup_f79dbbafedc84cb1b730e0810ec85d24.setContent(html_59a85245852b47ec90a4f02f21fcadc5);
+            
+
+            circle_c3d426bd0c9e431f9387c156d111dbd2.bindPopup(popup_f79dbbafedc84cb1b730e0810ec85d24)
+            ;
+
+            
+        
+    
+
+            var circle_4cfa25c98f9c4486a21fa519e1efd4ea = L.circle(
+                [24.974, 101.48700000000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 376,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_853b87456b224712919affbb2fcef0a2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b7da312888b843dbb77fc279cd118752 = $(`<div id="html_b7da312888b843dbb77fc279cd118752" style="width: 100.0%; height: 100.0%;">Yunnan 188</div>`)[0];
+                popup_853b87456b224712919affbb2fcef0a2.setContent(html_b7da312888b843dbb77fc279cd118752);
+            
+
+            circle_4cfa25c98f9c4486a21fa519e1efd4ea.bindPopup(popup_853b87456b224712919affbb2fcef0a2)
+            ;
+
+            
+        
+    
+
+            var circle_bb166002d9f14bb299c5d899c07849a5 = L.circle(
+                [29.1832, 120.0934],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2540,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e8e1766acc2b41bea6888ce59db2932d);
+            
+    
+            var popup_e33995c53f764d7abfd5f86d4c23b73c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d5e330bc122544e99f5d3a38e1f10291 = $(`<div id="html_d5e330bc122544e99f5d3a38e1f10291" style="width: 100.0%; height: 100.0%;">Zhejiang 1270</div>`)[0];
+                popup_e33995c53f764d7abfd5f86d4c23b73c.setContent(html_d5e330bc122544e99f5d3a38e1f10291);
+            
+
+            circle_bb166002d9f14bb299c5d899c07849a5.bindPopup(popup_e33995c53f764d7abfd5f86d4c23b73c)
+            ;
+
+            
+        
+</script>
